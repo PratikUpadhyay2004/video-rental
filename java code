@@ -1,0 +1,32 @@
+public class VideoStoreLauncher {
+    public static void main(String[] args) {
+        VideoStore store = new VideoStore();
+
+        
+        store.addVideo("The Matrix");
+        store.addVideo("Godfather II");
+        store.addVideo("Star Wars Episode IV: A New Hope");
+
+        
+        store.receiveRating("The Matrix", 5);
+        store.receiveRating("The Matrix", 4);
+        store.receiveRating("Godfather II", 5);
+        store.receiveRating("Godfather II", 5);
+        store.receiveRating("Star Wars Episode IV: A New Hope", 4);
+        store.receiveRating("Star Wars Episode IV: A New Hope", 3);
+
+        
+        store.checkOut("The Matrix");
+        store.checkOut("Godfather II");
+        store.checkOut("Star Wars Episode IV: A New Hope");
+
+       
+        store.returnVideo("The Matrix");
+        store.returnVideo("Godfather II");
+        store.returnVideo("Star Wars Episode IV: A New Hope");
+
+        
+        store.checkOut("Godfather II");
+        store.listInventory();
+    }
+}
